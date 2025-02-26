@@ -36,4 +36,21 @@ lista_de_alunos = ['Thales', 'Fabio', 'Luciano', 'Lais']
 for aluno in lista_de_alunos:
     print(aluno)
 
+print('===== Contando palavras em string com FOR')
 
+texto = 'thales costa fernandes fernandes costa thales c f'
+
+palavras = texto.split()
+print(palavras)
+
+contagem_de_palavras = {}
+
+# Vamos percorrer todas as palavras dentro de palavra e checar se está na contagem
+
+for palavra in palavras:
+    if palavra in contagem_de_palavras:
+        contagem_de_palavras[palavra] = +1
+        pass
+    else:
+        contagem_de_palavras[palavra] = 1
+        print(contagem_de_palavras)
