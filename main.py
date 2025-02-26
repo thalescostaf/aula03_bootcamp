@@ -58,8 +58,28 @@ for palavra in palavras:
 
 print('===== Exercio WHILE')
 
-condicao = True
+#condicao = True
 
-while condicao:
-    print('Execute meu código')
-    time.sleep(5)
+#while condicao:
+#    print('Execute meu código')
+#    time.sleep(5)
+
+
+
+print('===== novo desafio')
+
+nome_valido = False
+
+while nome_valido is not True:
+    try:
+        nome = input('Digite seu nome: ')
+        
+        if len(nome) == 00:
+            raise ValueError('O nome não pode estar vazio')
+        elif any(char.isdigit() for char in nome):
+            raise ValueError('O nome não pode conter numeros')
+        else:
+            nome_valido = True
+            print('Nome Válido: ', nome)
+    except ValueError as e:
+        print(e)
