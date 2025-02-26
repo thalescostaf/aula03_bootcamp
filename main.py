@@ -82,4 +82,4 @@ while nome_valido is not True:
             nome_valido = True
             print('Nome Válido: ', nome)
     except ValueError as e:
-        print(e)
+            print(e)
