@@ -1,6 +1,6 @@
+import time
 # O primeiro controle de fluxo é o IF
 # É o mais comum
-
 print('Primeiro exemplo')
 x = -5
 if x <= 2:
@@ -54,3 +54,12 @@ for palavra in palavras:
     else:
         contagem_de_palavras[palavra] = 1
         print(contagem_de_palavras)
+
+
+print('===== Exercio WHILE')
+
+condicao = True
+
+while condicao:
+    print('Execute meu código')
+    time.sleep(5)
